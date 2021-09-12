@@ -1,0 +1,176 @@
+:root{
+    --bgcolor-urna:#ddd5c9;
+    --bgcolor-teclado: #403A3A;
+    --bgcolor-buttons:#000;
+    --color-white:#fff;
+    --bgcolor-button-correct: #F09046;
+    --bgcolor-buton-confirm:#48C079;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+}
+@keyframes blink {
+    0%{ opacity: 0.2;}
+    50%{ opacity: 1;}
+    100%{ opacity: 0.2;}
+}
+.name-above-urn{
+    font-size: 50px;
+    display: flex;
+    transform: translateY(200%);
+}
+.urn{
+    background-color:var(--bgcolor-urna);
+    padding: 30px;
+    display: flex;
+    transform: translateY(calc(50% - 20px));
+}
+.left-screen{
+    width:500px;
+    height: 320px;
+    background:linear-gradient(to right, #e8e8e8, #c1c1c1);
+    margin-right: 30px;
+    border:2px solid #555;
+    display:flex;
+    flex-direction: column;
+}
+.right-keyboard{
+    background-color: var(--bgcolor-teclado);
+    text-transform: uppercase;
+}
+.keyboard-row{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.keyboard-button{
+    width:80px;
+    height: 40px;
+    background-color: var(--bgcolor-buttons);
+    color:var(--color-white);
+    font-size: 25px;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 3px 3px 0px #555;
+}
+.btn--white{
+    background-color: var(--color-white);
+    color:var(--bgcolor-buttons);
+    font-size: 15px;
+}
+.btn--correct{
+    background-color: var(--bgcolor-button-correct);
+    color:var(--bgcolor-buttons);
+    font-size: 15px;
+}
+.btn-confirm{
+    background-color: var(--bgcolor-buton-confirm);
+    color:var(--bgcolor-buttons);
+    font-size: 15px;
+    width: 95px;
+    height:45px;
+}
+
+
+.division-one{
+    flex:1;
+    display: flex;
+}
+.division-one-left{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.division-one-right{
+    width:90px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.division-one-text-initial{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.divison-one-subtitle{
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.division-one-numbers{
+    height:50px;
+    display:flex;
+}
+.division-one-candidate-characteristics{
+    flex:1;
+    line-height: 30px;
+}
+.number{
+    display: inline-block;
+    width:30px;
+    height:40px;
+    border:1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+.blink{
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.photo{
+    border:1px solid #000;
+    background-color: var(--color-white);
+    text-align: center;
+    font-size: 14px;
+}
+.photo img  {
+    width:100%;
+}
+.photo.small{
+    width:80%;
+    font-size: 12px;
+}
+.division-two{
+    height:55px;
+    font-size: 14px;
+    border-top:2px solid #000;
+    padding-left: 10px;
+}
+.aviso-grande{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-top:40px;
+}
+.aviso-gigante{
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.aviso-votou{
+    font-size: 35px;
+    color: var(--bgcolor-buttons);
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
