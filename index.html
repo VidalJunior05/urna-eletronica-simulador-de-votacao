@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="name-above-urn">
+        Simulador de Votação
+    </div>
+    <div class="urn">
+        <div class="left-screen">
+            <div class="division-one">
+                <div class="division-one-left">
+                    <div class="division-one-text-initial">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="divison-one-subtitle">
+                        <span>VEREADOR</span>
+                    </div>
+                    <div class="division-one-numbers">
+                        <div class="number blink"></div>
+                        <div class="number"></div>
+                    </div>
+                    <div class="division-one-candidate-characteristics">
+                        Nome: Chica de Luis<br/> 
+                        Partido: OOO<br/>
+                        Vice-Prefeito: Zé Bolinha<br/>
+                    </div>
+                </div>
+                <div class="division-one-right">
+                    <div class="photo">
+                        <img src="" alt="">
+                        Prefeito
+                    </div>
+                    <div class="photo">
+                        <img src="" alt="">
+                        Vice-Prefeito
+                    </div>
+                </div>
+            </div>
+            <div class="division-two">
+                Aperte a tecla:<br/>
+                CONFIRMA para CONFIRMAR este voto<br/>
+                CORRIGE para REINICIAR este voto.
+            </div>
+        </div>
+        <div class="right-keyboard">
+            <div class="keyboard-row">
+                <div class="keyboard-button" onclick="clicou('1')">1</div>
+                <div class="keyboard-button" onclick="clicou('2')">2</div>
+                <div class="keyboard-button" onclick="clicou('3')">3</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="keyboard-button" onclick="clicou('4')">4</div>
+                <div class="keyboard-button" onclick="clicou('5')">5</div>
+                <div class="keyboard-button" onclick="clicou('6')">6</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="keyboard-button" onclick="clicou('7')">7</div>
+                <div class="keyboard-button" onclick="clicou('8')">8</div>
+                <div class="keyboard-button" onclick="clicou('9')">9</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="keyboard-button" onclick="clicou('0')">0</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="keyboard-button btn--white" onclick="white()">Branco</div>
+                <div class="keyboard-button btn--correct" onclick="correct()">Corrige</div>
+                <div class="keyboard-button btn-confirm" onclick="confirm()">Confirma</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/pleito-eleitoral.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
